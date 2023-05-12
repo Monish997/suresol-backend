@@ -14,7 +14,7 @@ class Config:
     JOBS = [
         {
             "id": "report_battery",
-            "func": "sos.sos.utils:report_battery",
+            "func": "suresol.sos.utils:report_battery",
             "trigger": "interval",
             "seconds": 10,
         }

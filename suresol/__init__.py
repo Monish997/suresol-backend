@@ -19,9 +19,11 @@ def create_app(config_class=Config):
     scheduler.start()        
 
     from suresol.chat.routes import chat
+    from suresol.otp.routes import otp
     from suresol.sos.routes import sos
 
     app.register_blueprint(sos)
     app.register_blueprint(chat)
+    app.register_blueprint(otp)
 
     return app
